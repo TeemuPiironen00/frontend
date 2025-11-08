@@ -22,5 +22,6 @@ questions: Array<Questions> = [
 onInputChange(event: any, question: Questions) {
   console.log(event.target.value);
   question.setFeedback(event.target.value);
+  console.log(question.answer);
 }
 }

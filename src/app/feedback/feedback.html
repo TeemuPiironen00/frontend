@@ -1,0 +1,9 @@
+<h1>KYSYMYKSIÄ</h1>
+
+<div *ngFor="let question of questions">
+    {{ question.questionText}}
+    <mat-slider min="0" max="3" step="1" discrete>
+        <input  (input)="onInputChange($event, question)" matSliderThumb>
+    </mat-slider>
+    {{ question.answer }}
+</div>

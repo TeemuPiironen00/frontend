@@ -1,0 +1,19 @@
+<h1>Calculator</h1>
+
+
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    
+    <input  matInput placeholder="Start calculating..."  value='{{result}}' readonly >
+  </mat-form-field>
+
+
+<mat-grid-list cols="4" rowHeight="40px" gutterSize="5px">
+  <mat-grid-tile *ngFor="let button of buttons"> 
+    <button matButton="tonal" (click)="addValue(button)" > {{ button }}</button>
+  </mat-grid-tile>
+  
+  
+</mat-grid-list>
